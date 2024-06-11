@@ -246,6 +246,17 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.graphics.allocator</name>
+        <!-- New, non-Go devices should use 4.0 or the AIDL hal. -->
+        <version>2.0</version>
+        <version>3.0</version>
+        <version>4.0</version>
+        <interface>
+            <name>IAllocator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.graphics.allocator</name>
         <version>1-2</version>
@@ -660,6 +671,14 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.usb.gadget</name>
+        <interface>
+            <name>IUsbGadget</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.usb.gadget</name>
+        <version>1.0-2</version>
         <interface>
             <name>IUsbGadget</name>
             <instance>default</instance>
